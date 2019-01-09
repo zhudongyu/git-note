@@ -77,4 +77,8 @@
 
     // merge 冲突时撤销合并
     git merge --abort
+
+    
+    git stash // 加入缓存
+    git stash pop // 取出缓存
 ```
