@@ -53,4 +53,28 @@
     git config --list  查看配置信息
     git config user.name
     git config user.email
+
+    
+    git checkout remotes/origin/feature  切换远程分支后会有一个HEAD指针，但是它是临时的，没有分支存储
+    git checkout -b xxxxx 本地常见一个分支并且切换到该分支，此时切换的远程feature分支就同步到了本地刚创建的xxxxx分支上
+    git checkout -b xxx origin/xxx
+
+    git commit --amend 修改最后一次提交的 commit 标注的内容
+
+    // 本地及远程分支回退
+    git reset --hard commitId
+    git push origin HEAD --force 远程提交回退
+    // 也可以 
+    git push -f
+
+    // git 更新本地分支与远程同步
+    git pull -p
+
+    // 删除本地及远程分支
+    git branch -d branchName
+    git branch -D branchName
+    git push origin --delete branchName
+
+    // merge 冲突时撤销合并
+    git merge --abort
 ```
