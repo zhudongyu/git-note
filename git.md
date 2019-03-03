@@ -81,4 +81,7 @@
     
     git stash // 加入缓存
     git stash pop // 取出缓存
+    
+    // 当一个稳定版本分支想要去合并另一个研发中的分支中的一个功能时可用。
+    git cherry-pick commitID 
 ```
